@@ -1,0 +1,12 @@
+{{movieTitle}}
+<nav>
+  <ul >
+    <li *ngFor="let item of menuList">
+      <a       
+      (click)="onClickHandler($event, item)"
+      >
+      {{item.name}}
+    </a>
+    </li>    
+  </ul>
+</nav>

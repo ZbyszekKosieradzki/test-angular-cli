@@ -1,0 +1,12 @@
+<nav>
+    <ul >
+      <li *ngFor="let item of carouselList">
+        <a       
+        (click)="onClickHandler($event, item)"
+        >
+        <img src="{{item.image}}">
+      </a>
+      </li>    
+    </ul>
+  </nav>
+  
